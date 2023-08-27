@@ -4,169 +4,180 @@ import Navbar from "../layouts/navbar.astro";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="./main.css" />
-    <title>dp-web</title>
-  </head>
-  <body class="bg-sky-100">
-    <nav class="flex justify-center z-0">
-      <Navbar />
-    </nav>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="./main.css" />
+		<title>dp-web</title>
+	</head>
+	<body class="bg-sky-100">
+		<nav class="flex justify-center z-0">
+			<Navbar />
+		</nav>
 
-    <div class="p-10"></div>
+		<div class="p-10"></div>
 
-    <div
-      class="w-5/6 mx-auto max-w-6xl flex flex-col md:flex-row flex-wrap justify-between items-center align-middle relative"
-    >
-      <div
-        class="rounded-full bg-green-300 h-96 w-96 absolute top-28 -left-5 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
-      >
-      </div>
-      <div
-        class="rounded-full bg-amber-300 h-96 w-96 absolute -top-10 left-24 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
-        style="animation-delay: 2s;"
-      >
-      </div>
-      <div
-        class="rounded-full bg-pink-300 h-96 w-96 absolute top-32 left-72 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
-        style="animation-delay: 4s;"
-      >
-      </div>
-      <h1 class="text-6xl font-semibold font-serif tracking-wide my-10">
-        Daniel<br />Paludan
-      </h1>
-      <div
-        class="rounded-full bg-neutral-100 aspect-square w-72 my-10 outline-black outline-2 outline overflow-hidden shrink-0"
-      >
-        <img src="profilepic.jpeg" alt="Profile picture" class="aspect-square" />
-      </div>
-    </div>
-    <div class="bg-yellow-400 outline outline-2 outline-black">
-      <div
-        class="flex flex-row justify-between w-5/6 mx-auto max-w-6xl gap-6 -z40"
-      >
-        <Card>
-          <p class="text-center">Check out my university projects</p>
-          <div class="h-4"></div>
-          <a href="./projects/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="currentColor"
-              class="w-12 h-12 stroke-purple-900 border-b-2 border-transparent hover:border-b-2 hover:border-purple-950 transition-all box-border duration-200 mx-auto"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-            </svg>
-          </a>
-        </Card>
-        <Card>
-          <p class="text-center">Site under construction ...</p>
-          <div class="h-4"></div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1"
-            stroke="currentColor"
-            class="w-12 h-12 stroke-purple-900 mx-auto"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-            ></path>
-          </svg>
-        </Card>
-        <Card>
-          <p class="text-center">Welcome to my site...</p>
-          <div class="h-4"></div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1"
-            stroke="currentColor"
-            class="w-12 h-12 stroke-purple-900 mx-auto"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-            ></path>
-          </svg>
-        </Card>
-      </div>
-    </div>
-    <p class="text-neutral-800 font-serif">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus risus
-      vel placerat interdum. Donec sagittis lorem ipsum, auctor commodo nibh
-      accumsan id. Duis condimentum consequat orci, sed venenatis urna interdum
-      in. Suspendisse non tortor mauris. Aliquam porttitor nunc quis lacus
-      tristique tristique. Phasellus arcu justo, volutpat sit amet metus a,
-      ultricies imperdiet sem. Curabitur mauris justo, suscipit nec interdum sit
-      amet, venenatis id velit. In laoreet, justo ac volutpat aliquet, nulla
-      lacus semper lacus, nec tempus sapien leo eu nisi. Nullam tortor nisi,
-      gravida eu turpis vitae, pellentesque euismod nibh. Mauris lobortis tellus
-      at ullamcorper vulputate. Sed et auctor est, et vulputate est. Suspendisse
-      interdum ex nulla, et scelerisque velit venenatis eu. Pellentesque
-      venenatis eu velit sit amet porttitor. Cras sodales, sem in consectetur
-      consectetur, urna turpis aliquam orci, tincidunt cursus tortor sapien ac
-      mi. Nam faucibus tortor enim, non accumsan neque molestie ut. Aenean
-      bibendum magna ut sapien tincidunt, vel dictum neque consectetur.
-      <br /><br />
-      Vestibulum fermentum venenatis ex non sodales. Vestibulum magna sapien, suscipit
-      quis nibh sit amet, rhoncus facilisis urna. Mauris luctus mauris eu ante egestas,
-      et pretium justo vestibulum. Nullam tincidunt vestibulum sagittis. Vivamus
-      vitae purus id erat cursus interdum in sit amet libero. Nunc ipsum mi, vestibulum
-      ac eleifend condimentum, euismod eleifend arcu. Orci varius natoque penatibus
-      et magnis dis parturient montes, nascetur ridiculus mus. Mauris ultricies placerat
-      nulla, vitae malesuada nisi tincidunt vitae. Ut porttitor augue ut porta iaculis.
-      Aliquam interdum sagittis nulla eu tincidunt. Class aptent taciti sociosqu
-      ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et
-      malesuada fames ac ante ipsum primis in faucibus. Vivamus ultricies elit eget
-      mollis rhoncus. Integer egestas ultrices imperdiet.
-      <br /><br />
-      Donec tempor tellus in purus ultrices, non sollicitudin purus sagittis. Proin
-      et nisl quis arcu ullamcorper volutpat eget id mi. Ut non turpis mollis, accumsan
-      velit vel, laoreet dui. Orci varius natoque penatibus et magnis dis parturient
-      montes, nascetur ridiculus mus. Nulla ultrices leo nec neque rhoncus feugiat.
-      Vestibulum fermentum, nibh et aliquet dapibus, nibh neque iaculis odio, lacinia
-      fringilla enim arcu nec metus. Suspendisse in mi porta, pharetra nisl sed,
-      dapibus ipsum. Aliquam sed sapien nec felis tincidunt egestas. Pellentesque
-      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-      Sed vehicula aliquet elit non pulvinar. Praesent pulvinar velit sit amet suscipit
-      eleifend. Suspendisse dictum efficitur odio non fermentum. Donec vitae tempus
-      leo. Aliquam luctus lectus in felis mollis, in lacinia est ullamcorper.
-      <br /><br />
-      Etiam auctor nunc at metus mollis eleifend. Quisque dignissim, ex in blandit
-      ullamcorper, massa enim accumsan mauris, quis interdum massa ipsum sed enim.
-      Mauris et sapien quis libero maximus ornare. Morbi elementum in quam sed ornare.
-      Etiam pharetra nec arcu vel euismod. Sed blandit risus non nunc egestas, eget
-      maximus ante euismod. Nullam sodales, ante quis rhoncus ultricies, urna velit
-      lobortis dui, a finibus augue mauris quis quam. Cras bibendum nisi sed feugiat
-      scelerisque. Duis eget sem elit. Donec at dui consequat, rutrum ipsum eget,
-      tempor sem. Vivamus cursus justo eu odio posuere molestie. Curabitur a augue
-      ante. Nulla elementum tincidunt massa, id hendrerit nunc. Morbi dictum quam
-      libero, in interdum nisi ultrices et. Mauris consectetur gravida turpis, blandit
-      imperdiet dui molestie ultricies. Etiam sit amet vehicula metus, ac cursus
-      augue.
-      <br /><br />
-      Cras faucibus lorem ligula, vitae euismod urna pulvinar non. Nunc eleifend
-      maximus nunc at maximus. Duis feugiat, nisi eget vehicula auctor, dolor diam
-      venenatis metus, condimentum pharetra orci lectus in augue. Sed tristique finibus
-      dui eu sodales. Aenean varius felis sagittis magna ullamcorper mollis. Vivamus
-      pellentesque, massa ut elementum placerat, ante urna porta nulla, et semper
-      nisi diam sed nunc. Aenean maximus volutpat dignissim. Vivamus vulputate nunc
-      id neque pharetra, non ultricies eros convallis.
-    </p>
-  </body>
+		<div
+			class="w-5/6 mx-auto max-w-6xl flex flex-col md:flex-row flex-wrap justify-between items-center align-middle relative"
+		>
+			<div
+				class="rounded-full bg-green-300 h-96 w-96 absolute top-28 -left-5 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
+			>
+			</div>
+			<div
+				class="rounded-full bg-amber-300 h-96 w-96 absolute -top-10 left-24 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
+				style="animation-delay: 2s;"
+			>
+			</div>
+			<div
+				class="rounded-full bg-pink-300 h-96 w-96 absolute top-32 left-72 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
+				style="animation-delay: 4s;"
+			>
+			</div>
+			<h1
+				class="text-6xl font-semibold font-serif tracking-wide my-10 text-white drop-shadow-md
+]"
+			>
+				Daniel<br />Paludan
+			</h1>
+			<div
+				class="rounded-full bg-neutral-100 aspect-square w-72 my-10 outline-black outline-2 outline overflow-hidden shrink-0"
+			>
+				<img
+					src="profilepic.jpeg"
+					alt="Profile picture"
+					class="aspect-square"
+				/>
+			</div>
+		</div>
+		<div class="bg-yellow-400 outline outline-2 outline-black">
+			<div
+				class="flex flex-row justify-between w-5/6 mx-auto max-w-6xl gap-6 -z40"
+			>
+				<Card>
+					<p class="text-center">Check out my university projects</p>
+					<div class="h-4"></div>
+					<a href="./projects/">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1"
+							stroke="currentColor"
+							class="w-12 h-12 stroke-purple-900 border-b-2 border-transparent hover:border-b-2 hover:border-purple-950 transition-all box-border duration-200 mx-auto"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+						</svg>
+					</a>
+				</Card>
+				<Card>
+					<p class="text-center">Site under construction ...</p>
+					<div class="h-4"></div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1"
+						stroke="currentColor"
+						class="w-12 h-12 stroke-purple-900 mx-auto"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+						></path>
+					</svg>
+				</Card>
+				<Card>
+					<p class="text-center">Welcome to my site...</p>
+					<div class="h-4"></div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1"
+						stroke="currentColor"
+						class="w-12 h-12 stroke-purple-900 mx-auto"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+						></path>
+					</svg>
+				</Card>
+			</div>
+		</div>
+		<p class="text-neutral-800 font-serif">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus risus
+			vel placerat interdum. Donec sagittis lorem ipsum, auctor commodo nibh
+			accumsan id. Duis condimentum consequat orci, sed venenatis urna interdum
+			in. Suspendisse non tortor mauris. Aliquam porttitor nunc quis lacus
+			tristique tristique. Phasellus arcu justo, volutpat sit amet metus a,
+			ultricies imperdiet sem. Curabitur mauris justo, suscipit nec interdum sit
+			amet, venenatis id velit. In laoreet, justo ac volutpat aliquet, nulla
+			lacus semper lacus, nec tempus sapien leo eu nisi. Nullam tortor nisi,
+			gravida eu turpis vitae, pellentesque euismod nibh. Mauris lobortis tellus
+			at ullamcorper vulputate. Sed et auctor est, et vulputate est. Suspendisse
+			interdum ex nulla, et scelerisque velit venenatis eu. Pellentesque
+			venenatis eu velit sit amet porttitor. Cras sodales, sem in consectetur
+			consectetur, urna turpis aliquam orci, tincidunt cursus tortor sapien ac
+			mi. Nam faucibus tortor enim, non accumsan neque molestie ut. Aenean
+			bibendum magna ut sapien tincidunt, vel dictum neque consectetur.
+			<br /><br />
+			 Vestibulum fermentum venenatis ex non sodales. Vestibulum magna sapien,
+			suscipit quis nibh sit amet, rhoncus facilisis urna. Mauris luctus mauris
+			eu ante egestas, et pretium justo vestibulum. Nullam tincidunt vestibulum
+			sagittis. Vivamus vitae purus id erat cursus interdum in sit amet libero.
+			Nunc ipsum mi, vestibulum ac eleifend condimentum, euismod eleifend arcu.
+			Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+			ridiculus mus. Mauris ultricies placerat nulla, vitae malesuada nisi
+			tincidunt vitae. Ut porttitor augue ut porta iaculis. Aliquam interdum
+			sagittis nulla eu tincidunt. Class aptent taciti sociosqu ad litora
+			torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada
+			fames ac ante ipsum primis in faucibus. Vivamus ultricies elit eget mollis
+			rhoncus. Integer egestas ultrices imperdiet.
+			<br /><br />
+			 Donec tempor tellus in purus ultrices, non sollicitudin purus sagittis.
+			Proin et nisl quis arcu ullamcorper volutpat eget id mi. Ut non turpis
+			mollis, accumsan velit vel, laoreet dui. Orci varius natoque penatibus et
+			magnis dis parturient montes, nascetur ridiculus mus. Nulla ultrices leo
+			nec neque rhoncus feugiat. Vestibulum fermentum, nibh et aliquet dapibus,
+			nibh neque iaculis odio, lacinia fringilla enim arcu nec metus.
+			Suspendisse in mi porta, pharetra nisl sed, dapibus ipsum. Aliquam sed
+			sapien nec felis tincidunt egestas. Pellentesque habitant morbi tristique
+			senectus et netus et malesuada fames ac turpis egestas. Sed vehicula
+			aliquet elit non pulvinar. Praesent pulvinar velit sit amet suscipit
+			eleifend. Suspendisse dictum efficitur odio non fermentum. Donec vitae
+			tempus leo. Aliquam luctus lectus in felis mollis, in lacinia est
+			ullamcorper.
+			<br /><br />
+			 Etiam auctor nunc at metus mollis eleifend. Quisque dignissim, ex in
+			blandit ullamcorper, massa enim accumsan mauris, quis interdum massa ipsum
+			sed enim. Mauris et sapien quis libero maximus ornare. Morbi elementum in
+			quam sed ornare. Etiam pharetra nec arcu vel euismod. Sed blandit risus
+			non nunc egestas, eget maximus ante euismod. Nullam sodales, ante quis
+			rhoncus ultricies, urna velit lobortis dui, a finibus augue mauris quis
+			quam. Cras bibendum nisi sed feugiat scelerisque. Duis eget sem elit.
+			Donec at dui consequat, rutrum ipsum eget, tempor sem. Vivamus cursus
+			justo eu odio posuere molestie. Curabitur a augue ante. Nulla elementum
+			tincidunt massa, id hendrerit nunc. Morbi dictum quam libero, in interdum
+			nisi ultrices et. Mauris consectetur gravida turpis, blandit imperdiet dui
+			molestie ultricies. Etiam sit amet vehicula metus, ac cursus augue.
+			<br /><br />
+			 Cras faucibus lorem ligula, vitae euismod urna pulvinar non. Nunc
+			eleifend maximus nunc at maximus. Duis feugiat, nisi eget vehicula auctor,
+			dolor diam venenatis metus, condimentum pharetra orci lectus in augue. Sed
+			tristique finibus dui eu sodales. Aenean varius felis sagittis magna
+			ullamcorper mollis. Vivamus pellentesque, massa ut elementum placerat,
+			ante urna porta nulla, et semper nisi diam sed nunc. Aenean maximus
+			volutpat dignissim. Vivamus vulputate nunc id neque pharetra, non
+			ultricies eros convallis.
+		</p>
+	</body>
 </html>
