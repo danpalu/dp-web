@@ -7,7 +7,10 @@ import Navbar from "../layouts/navbar.astro";
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="./main.css" />
 		<title>dp-web</title>
@@ -18,10 +21,7 @@ import Navbar from "../layouts/navbar.astro";
 		</nav>
 
 		<div class="p-10"></div>
-
-		<div
-			class="w-5/6 mx-auto max-w-6xl flex flex-col md:flex-row flex-wrap justify-between items-center align-middle relative"
-		>
+		<div class="relative w-full md:px-5 overflow-x-clip">
 			<div
 				class="rounded-full bg-green-300 h-96 w-96 absolute top-28 -left-5 -z-10 filter mix-blend-multiply blur-2xl animate-blob"
 			>
@@ -36,10 +36,13 @@ import Navbar from "../layouts/navbar.astro";
 				style="animation-delay: 4s;"
 			>
 			</div>
-			<h1
-				class="text-6xl font-semibold font-serif tracking-wide my-10 text-white drop-shadow-md
-]"
-			>
+		</div>
+
+		<div
+			class="w-5/6 mx-auto max-w-6xl flex flex-col md:flex-row flex-wrap justify-between items-center align-middle relative"
+			style="overflow-clip-margin: ;"
+		>
+			<h1 class="text-6xl font-semibold font-serif tracking-wide my-10">
 				Daniel<br />Paludan
 			</h1>
 			<div
