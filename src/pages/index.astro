@@ -1,6 +1,7 @@
 ---
 import Card from "../layouts/card.astro";
 import Navbar from "../layouts/navbar.astro";
+import Skillcard from "../layouts/skillcard.astro";
 ---
 
 <html lang="en">
@@ -120,71 +121,121 @@ import Navbar from "../layouts/navbar.astro";
 				</Card>
 			</div>
 		</div>
-		<p class="text-neutral-800 font-serif">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus risus
-			vel placerat interdum. Donec sagittis lorem ipsum, auctor commodo nibh
-			accumsan id. Duis condimentum consequat orci, sed venenatis urna interdum
-			in. Suspendisse non tortor mauris. Aliquam porttitor nunc quis lacus
-			tristique tristique. Phasellus arcu justo, volutpat sit amet metus a,
-			ultricies imperdiet sem. Curabitur mauris justo, suscipit nec interdum sit
-			amet, venenatis id velit. In laoreet, justo ac volutpat aliquet, nulla
-			lacus semper lacus, nec tempus sapien leo eu nisi. Nullam tortor nisi,
-			gravida eu turpis vitae, pellentesque euismod nibh. Mauris lobortis tellus
-			at ullamcorper vulputate. Sed et auctor est, et vulputate est. Suspendisse
-			interdum ex nulla, et scelerisque velit venenatis eu. Pellentesque
-			venenatis eu velit sit amet porttitor. Cras sodales, sem in consectetur
-			consectetur, urna turpis aliquam orci, tincidunt cursus tortor sapien ac
-			mi. Nam faucibus tortor enim, non accumsan neque molestie ut. Aenean
-			bibendum magna ut sapien tincidunt, vel dictum neque consectetur.
-			<br /><br />
-			 Vestibulum fermentum venenatis ex non sodales. Vestibulum magna sapien,
-			suscipit quis nibh sit amet, rhoncus facilisis urna. Mauris luctus mauris
-			eu ante egestas, et pretium justo vestibulum. Nullam tincidunt vestibulum
-			sagittis. Vivamus vitae purus id erat cursus interdum in sit amet libero.
-			Nunc ipsum mi, vestibulum ac eleifend condimentum, euismod eleifend arcu.
-			Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-			ridiculus mus. Mauris ultricies placerat nulla, vitae malesuada nisi
-			tincidunt vitae. Ut porttitor augue ut porta iaculis. Aliquam interdum
-			sagittis nulla eu tincidunt. Class aptent taciti sociosqu ad litora
-			torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada
-			fames ac ante ipsum primis in faucibus. Vivamus ultricies elit eget mollis
-			rhoncus. Integer egestas ultrices imperdiet.
-			<br /><br />
-			 Donec tempor tellus in purus ultrices, non sollicitudin purus sagittis.
-			Proin et nisl quis arcu ullamcorper volutpat eget id mi. Ut non turpis
-			mollis, accumsan velit vel, laoreet dui. Orci varius natoque penatibus et
-			magnis dis parturient montes, nascetur ridiculus mus. Nulla ultrices leo
-			nec neque rhoncus feugiat. Vestibulum fermentum, nibh et aliquet dapibus,
-			nibh neque iaculis odio, lacinia fringilla enim arcu nec metus.
-			Suspendisse in mi porta, pharetra nisl sed, dapibus ipsum. Aliquam sed
-			sapien nec felis tincidunt egestas. Pellentesque habitant morbi tristique
-			senectus et netus et malesuada fames ac turpis egestas. Sed vehicula
-			aliquet elit non pulvinar. Praesent pulvinar velit sit amet suscipit
-			eleifend. Suspendisse dictum efficitur odio non fermentum. Donec vitae
-			tempus leo. Aliquam luctus lectus in felis mollis, in lacinia est
-			ullamcorper.
-			<br /><br />
-			 Etiam auctor nunc at metus mollis eleifend. Quisque dignissim, ex in
-			blandit ullamcorper, massa enim accumsan mauris, quis interdum massa ipsum
-			sed enim. Mauris et sapien quis libero maximus ornare. Morbi elementum in
-			quam sed ornare. Etiam pharetra nec arcu vel euismod. Sed blandit risus
-			non nunc egestas, eget maximus ante euismod. Nullam sodales, ante quis
-			rhoncus ultricies, urna velit lobortis dui, a finibus augue mauris quis
-			quam. Cras bibendum nisi sed feugiat scelerisque. Duis eget sem elit.
-			Donec at dui consequat, rutrum ipsum eget, tempor sem. Vivamus cursus
-			justo eu odio posuere molestie. Curabitur a augue ante. Nulla elementum
-			tincidunt massa, id hendrerit nunc. Morbi dictum quam libero, in interdum
-			nisi ultrices et. Mauris consectetur gravida turpis, blandit imperdiet dui
-			molestie ultricies. Etiam sit amet vehicula metus, ac cursus augue.
-			<br /><br />
-			 Cras faucibus lorem ligula, vitae euismod urna pulvinar non. Nunc
-			eleifend maximus nunc at maximus. Duis feugiat, nisi eget vehicula auctor,
-			dolor diam venenatis metus, condimentum pharetra orci lectus in augue. Sed
-			tristique finibus dui eu sodales. Aenean varius felis sagittis magna
-			ullamcorper mollis. Vivamus pellentesque, massa ut elementum placerat,
-			ante urna porta nulla, et semper nisi diam sed nunc. Aenean maximus
-			volutpat dignissim. Vivamus vulputate nunc id neque pharetra, non
-			ultricies eros convallis.
-		</p>
+		<div class="m-5"></div>
+		<section class="bg-fuchsia-50 outline outline-2 outline-black py-5">
+			<div class="w-5/6 max-w-6xl mx-auto">
+				<h2 class="text-center text-3xl mb-10">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+						class="w-8 h-8 inline relative -top-0.5"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+							clip-rule="evenodd"></path>
+					</svg> SKILLS
+				</h2>
+				<div
+					class="flex flex-row flex-wrap gap-5 md:gap-10 justify-center items-center mb-10"
+				>
+					<Skillcard textcolor="text-indigo-700" bgcolor="bg-indigo-50">
+						<h3 class="font-bold">UX Evaluation</h3>
+						<p>Designing and conducting user experience evaluation tests.</p>
+					</Skillcard>
+					<Skillcard textcolor="text-emerald-700" bgcolor="bg-emerald-50">
+						<h3 class="font-bold">UI Design</h3>
+						<p>Including prototyping and development.</p>
+					</Skillcard>
+					<Skillcard textcolor="text-pink-700" bgcolor="bg-pink-50">
+						<h3 class="font-bold">Web development</h3>
+						<p>Mostly static websites.</p>
+					</Skillcard>
+					<Skillcard textcolor="text-amber-700" bgcolor="bg-amber-50">
+						<h3 class="font-bold">Android development</h3>
+						<p>Experience using the Flutter framework.</p>
+					</Skillcard>
+					<Skillcard textcolor="text-rose-700" bgcolor="bg-rose-50" />
+				</div>
+				<h2 class="text-center text-3xl mb-10">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+						class="w-8 h-8 inline relative -top-0.5"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+							clip-rule="evenodd"></path>
+					</svg>
+
+					 BADGES
+				</h2>
+				<div
+					class="flex flex-row justify-center gap-10 md:gap-20 items-start flex-wrap"
+				>
+					<blockquote
+						class="badgr-badge bg-white p-7 rounded-3xl outline outline-2 outline-black"
+						style='font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;'
+					>
+						<a
+							href="https://api.badgr.io/public/assertions/M8vP5RsjQvqSzBxvJCJ0mQ?identity__email=dpalud20%40student.aau.dk"
+							><img
+								width="120px"
+								height="120px"
+								src="https://api.badgr.io/public/assertions/M8vP5RsjQvqSzBxvJCJ0mQ/image"
+							/></a
+						><p
+							class="badgr-badge-name pt-2"
+							style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;"
+						>
+							UX physiology '22
+						</p><p
+							class="badgr-badge-date"
+							style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"
+						>
+							<strong
+								style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;"
+								>Awarded:
+							</strong>4. jul. 2023
+						</p><script
+							async="async"
+							src="https://badgr.com/assets/widgets.bundle.js"></script>
+					</blockquote>
+
+					<blockquote
+						class="badgr-badge bg-white p-7 rounded-3xl outline outline-2 outline-black"
+						style='font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;'
+					>
+						<a
+							href="https://api.badgr.io/public/assertions/XF2CvCp5ThmVRqCUATa_ow?identity__email=dpalud20%40student.aau.dk"
+							><img
+								width="120px"
+								height="120px"
+								src="https://api.badgr.io/public/assertions/XF2CvCp5ThmVRqCUATa_ow/image"
+							/></a
+						><p
+							class="badgr-badge-name pt-2"
+							style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;"
+						>
+							UX modelling '22
+						</p>
+						<p
+							class="badgr-badge-date"
+							style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"
+						>
+							<strong
+								style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;"
+								>Awarded:
+							</strong>27. jun. 2022
+						</p><script
+							async="async"
+							src="https://badgr.com/assets/widgets.bundle.js"></script>
+					</blockquote>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

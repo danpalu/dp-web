@@ -1,0 +1,13 @@
+---
+const { bgcolor } = Astro.props;
+const { textcolor } = Astro.props;
+---
+
+<div
+  class={`w-36 md:w-56 rounded-3xl p-3 outline outline-2 outline-black shadow-[8px_8px_0px_0px_rgba(28,0,56,0.7)] hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_rgba(28,0,56,0.7)] hover:z-0 transition-all duration-100 z-10 ${bgcolor} ${textcolor}`}
+>
+  <slot>
+    <h3 class="font-bold">Hejsa</h3>
+    <p>This card is {bgcolor} and the text is {textcolor}.</p>
+  </slot>
+</div>
