@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: "depe.dev",
-  base: "",
+  base: "/dp-web",
 });
